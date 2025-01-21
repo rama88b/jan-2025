@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Remove default configuration
-RUN rm /etc/nginx/conf.d/default.conf
+ttt RUN rm /etc/nginx/conf.d/default.conf
 
 # Add a custom configuration file directly in the Dockerfile
 RUN echo 'server {\
