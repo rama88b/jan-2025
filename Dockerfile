@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Remove default configuration
-ttt RUN rm /etc/nginx/conf.d/default.conf
+ RUN rm /etc/nginx/conf.d/default.conf
 
 # Add a custom configuration file directly in the Dockerfile
 RUN echo 'server {\
@@ -20,7 +20,7 @@ RUN echo '<!DOCTYPE html>\
     <title>Welcome to Nginx</title>\
 </head>\
 <body>\
-    <h1>Hello World cicd In Action version prod !V3!</h1>\
+    <h1>Hello World cicd In Action version prod !V1!</h1>\
 
 </body>\
 </html>' > /usr/share/nginx/html/index.html
